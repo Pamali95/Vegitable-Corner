@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    background-color: black;
+    display: grid;
+    grid-template-rows: 43px;
+
+}
+.name{
+    color: white;
+    font-size: 27px;
+    font-weight: 800;
+    margin: 25px 0 0 25px;
+}
+
+.list{
+    list-style: none;
+    overflow: hidden;
+    margin: auto auto auto 700px;
+}
+.list a{
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: red;
+}
+li a{
+    display: block;
+    padding: 20px;
+}
+li{
+    float: left;
+}
+
+.hero{
+    display: grid;
+    grid-template-rows: 400px;
+}
+.hero img{
+    margin: 0;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+}
+.content{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 800;
+    margin: auto;
+    padding: 15px;
+}
+.cards{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+
+}
+.card-content{
+    margin: auto;
+    width: 400px;
+    height: 460px;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px #808080;
+    border-radius: 10px;
+}
+
+.card-content img{
+    width: 350px;
+    height: 250px;
+    padding: 15px 25px 10px 25px;
+}
+.card-content h2,p{
+    text-align: center;
+}
+.card-content h2{
+    font-size: 27px;
+    padding: 5px 0 ;
+}
+.card-content p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.card-content button{
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 20px 140px;
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.card-content button:hover{
+    background-color: black;
+    font-size: 23px;
+}
+.newsletter{
+    height: 550px;
+
+}
+.newsletter h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+} 
+.newsletter-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+    padding-top:30px ;
+    
+}
+.gradient{
+    background: linear-gradient(to bottom right, #808080 30%, #ffffff 70%)
+}
+.left{
+    font-size: 20px;
+    margin-left: 175px;
+    margin-bottom: 10px;
+    padding: 7px 50px 7px 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.right{
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 7px 50px 7px 50px;
+    border-radius: 5px;
+    margin-right: 175px;
+    margin-left: 10px;
+}
+.full{
+
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 7px 0 0 50px;
+    width: 72%;
+    
+}
+.button{
+  text-align: center;
+  margin: 20px auto; 
+    display: block; 
+    width: 200px; 
+    font-size: 22px;
+    border-radius:5px;
+    font-weight: bold;
+    padding: 5px 0 ;
+    background-color: #4d4d4d;
+    color: white;
+}
+.newsletter form {
+    text-align: center;
+}
+.footer{
+    height: 100px;
+    background-color: #222121;
+    margin-top: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer h3{
+    color: aliceblue;
+    font-size: 16px;
+    padding-top:20px ;
+    padding-left: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .hero {
+        grid-template-rows: 200px;
+    }
+    .hero img {
+        height: 200px;
+    }
+    .newsletter-content {
+        grid-template-columns: 1fr;
+    }
+    .left, .right, .full {
+        width: calc(100% - 30px);
+    }
+    .list {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .list li {
+        float: none;
+    }
+    .card-content img {
+        width: 100%;
+        padding: 0;
+    }
+    .left, .full{
+        margin-left: 10px;
+    }
+    
+}
